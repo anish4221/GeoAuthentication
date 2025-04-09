@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secure Form Access</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="lock-icon">🔒</div>
+    <h2>Secure Form Access</h2>
+    <p class="subtitle">Please enter the password to access the feedback form</p>
+    
+    <div class="form-group">
+      <input type="password" id="password" placeholder="Enter password" autocomplete="off">
+    </div>
+    
+    <button onclick="checkAccess()" id="accessBtn">
+      <span id="btnText">Unlock Form</span>
+      <div class="spinner" id="spinner"></div>
+    </button>
+    
+    <div class="status-message" id="statusMessage"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

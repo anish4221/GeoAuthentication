@@ -1,0 +1,111 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Fullscreen Centering */
+  body, html {
+    height: 100%;
+    background: linear-gradient(135deg, #f0f2f5 0%, #d9e2ec 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Main Container */
+  .container {
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px 30px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  /* Lock Icon */
+  .lock-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Headings */
+  h2 {
+    color: #2e2e2e;
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+  }
+  
+  .subtitle {
+    color: #5e6c84;
+    font-size: 1rem;
+    margin-bottom: 25px;
+  }
+  
+  /* Input */
+  .form-group input {
+    width: 100%;
+    padding: 14px 18px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: border 0.3s ease;
+  }
+  
+  .form-group input:focus {
+    border-color: #4c6ef5;
+    outline: none;
+  }
+  
+  /* Button */
+  button {
+    background-color: #4c6ef5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 0;
+    font-size: 1rem;
+    font-weight: 500;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #3b5bdb;
+  }
+  
+  /* Spinner */
+  .spinner {
+    display: none;
+    width: 16px;
+    height: 16px;
+    border: 3px solid white;
+    border-top: 3px solid #4c6ef5;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  @keyframes spin {
+    0% { transform: translateY(-50%) rotate(0deg); }
+    100% { transform: translateY(-50%) rotate(360deg); }
+  }
+  
+  /* Status Message */
+  .status-message {
+    margin-top: 20px;
+    font-size: 0.95rem;
+    color: #e74c3c;
+  }
+  
+  
