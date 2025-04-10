@@ -64,8 +64,8 @@ function checkAccess() {
       const userLat = position.coords.latitude;
       const userLon = position.coords.longitude;
 
-      const allowedLat = 28.40696398719849; // your location
-      const allowedLon = 77.29227715974973;
+      const allowedLat = 28.449795421689224; // your location
+      const allowedLon = 77.28346790184364;
       const maxDistanceInKm = 1.0;
 
       const distance = getDistanceFromLatLonInKm(userLat, userLon, allowedLat, allowedLon);
